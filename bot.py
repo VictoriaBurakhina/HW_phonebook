@@ -49,15 +49,3 @@ def search_text(message):
 
 bot.polling(none_stop=True, interval=0)
 
-#@bot.message_handler(commands=["buttons"])
-#def buttons(mess):
-    #markup = types.InlineKeyboardMarkup(resize_keyboard=True, row_width=2)
-    #button_1 = types.InlineKeyboardMarkup(text='Посмотреть справочник')
-    #button_2 = types.InlineKeyboardMarkup(text="Поиск контакта")
-    #button_3 = types.InlineKeyboardMarkup(text="Добавить новый контакт")
-    #button_4 = types.InlineKeyboardMarkup(text="Удалить контакт")
-
-    #markup.add(button_1, button_2, button_3, button_4)
-    #bot.send_message(mess.from_user.id, text="Нажмите нужную кнопку", reply_markup=markup)
-
-#bot.polling(none_stop=True, interval=0)
