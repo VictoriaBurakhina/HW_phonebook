@@ -26,6 +26,16 @@ def read_csv():
             phone_numbers[row['first_name']]= row['contact info']
         if 'first_name' in phone_numbers:
             phone_numbers.pop('first_name')
+        return str(phone_numbers)
+
+def read_csv_for_search():
+    phone_numbers = dict()
+    with open('names.csv', encoding='utf-8', newline='') as csvfile:
+        reader = csv.DictReader(csvfile)
+        for row in reader:
+            phone_numbers[row['first_name']]= row['contact info']
+        if 'first_name' in phone_numbers:
+            phone_numbers.pop('first_name')
         return phone_numbers
 
 # добавление новой записи
@@ -60,4 +70,4 @@ def print_csv():
     phone_numbers = read_csv()
     for key in phone_numbers.keys():
         s = phone_numbers[key].replace("[", "").replace("'", "").replace(',', "").replace("]", "")
-        print(key, s)
+        return str(s)
