@@ -4,7 +4,7 @@ from telebot import types
 import add_read_write
 from searching import search
 
-bot = telebot.TeleBot('5752787687:AAEF7tAQOVSRUraT768nM0EJrfeazPr6-hQ')
+bot = telebot.TeleBot('token')
 
 
 
